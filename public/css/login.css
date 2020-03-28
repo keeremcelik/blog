@@ -1,0 +1,54 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+html{
+	height: 100%;
+}
+body {
+  background: rgb(0,255,21);
+background: linear-gradient(0deg, rgba(201,0,255,1) 0%, rgba(47,35,221,1) 100%);
+
+}
+
+.loginBox{
+	min-width: 400px;
+	padding:2rem;
+	background-color: #fff;
+	margin: 50px auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.login-footer{
+	text-align: center;
+	display: grid;
+}
+.loginBox .form-label-group{
+	margin-bottom: 1rem;
+}
+.loginBox .logo{
+text-align: center;
+padding: 2rem 0rem;
+}
+
+.title{
+	font-size: 30px;
+	font-weight: 900;
+	color: rgba(0, 0, 0, 0.8);
+}
+.title span{
+	font-size: 15px;
+font-weight: 800;
+color: #cacaca;
+}
+.btn-login:hover{
+	color: #fefefe;
+text-decoration: none;
+background-color: #c301fd;
+}
+.btn-login{
+	background-color: #3222dd;
+	color: #fff;
+	border-radius: 0;
+	font-weight: 700;
+}

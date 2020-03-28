@@ -1,0 +1,53 @@
+.contact{
+	display:grid;
+}
+.contact-detail{
+	display:flex;
+	width: 100%;
+}
+.contact-map {
+	width:100%;
+}
+.contact-map iframe{
+	width:100%;
+}
+.contact-inf p{
+	margin-bottom: 5px;
+}
+.contact-inf h5{
+	
+	padding-bottom:0.5em;
+}
+.contact-inf{
+	width: 100%;
+	padding: 2em 0;
+}
+#contact-s1{
+	width:100%;
+	padding: 80px 0 0 0;
+}
+.contact-title{
+		width: 100%;
+		padding-left: 15px;
+}
+.contact-title h1{
+	padding-bottom: 0.5em;
+	font-size: 1.25rem;
+font-weight: 700;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.ticket{
+	width:100%;
+}
+
+@media screen and (max-width: 768px) {
+	.ticket-mail{
+		padding-top: 2em;
+	}
+	.contact-map{
+		padding: 0px 15px;
+	}
+	.contact-title{
+		
+	}
+}
