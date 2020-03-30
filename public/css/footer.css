@@ -1,11 +1,12 @@
 /* footer */
 .page-footer{
-	background-color:#191919;
-	color:#fff;
+	background-color:#fff;
+	color:#191919;
 	display: flex;
 	margin-top: 3vw;
 	padding-top: 3vw;
 	padding-bottom: 3vw;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .social-media{
 	display:inline-table;

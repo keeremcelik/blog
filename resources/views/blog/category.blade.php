@@ -2,86 +2,144 @@
 @section('baslik','Blog Title')
 @section('icerik')
 <section id="s1">
-	<div class="container">	
+	<div class="container-fluid">			
 		<div class="row">	
-				<div class="page-title">	
-					<h1>{{$category[0]->name}}</h1>
-				</div>	
-			</div>
-		<div class="row">	
-			
-			<div class="blogBox col-xs-12 col-md-12">
-				<div class="col-md-8">
-				<div class="row">
+			<div class="col-head ">	
 				
-					@foreach($posts as $post)	
-						<div class="col-md-6">
-						<div class="post">
-								<div class="post-box">								
-								
-								<div class="post-img">
-										<a href="{{url('/blog/post/'.$post->id.'/'.$post->sef_url)}}" class="">
-									<span class="cat">{{ $post->category->name }}</span>
-								
-										<img class="" src="{{asset('storage/img/posts/'.$post->id.'/'.$post->coverimg) }}"/>
-									</a>
-								</div>
-								<div class="">
-									
-									<h3 class="post-box-title ">
-									
-										{{ $post->title }}
-										
-									</h3>
-									
-									<div class="post-box-text text-justify">
-										<p>
-										{{ $post->abstract }}
-										</p>
-									</div>
-									<div class="post-box-subtitle">
-									
-									</div></div>
-								</div>
-							</div>
-							</div>
-					@endforeach			
-				</div>
-				</div>
-				<div class="pageRight col-md-4">
-					<div class="writers">
-						<h4>Yazarlar</h4>
-
-						<div class="writer">
-							<div class="img">
-								<img src="{{asset('storage/img/usr/'.$personal[0]->img) }}" />
-							</div>
-							<div class="detail">
-								<h5>{{$personal[0]->name }}</h5>							
-								<span>Software Developer</span>
-							</div>
-					
-						
+			</div>
+		</div>
+		<div class="row mt-4">	
+			<div id="col-left" class="col-left br-r col-md-3">
+				<div class="col-title">
+					<h3 class="h4 font-weight-bold text-dark">ÖNERİLENLER</h3>
+				</div>		
+				@foreach($random as $key => $value)
+				<div class="box">								
+					<a href="{{url('/blog/post/'.$value->id.'/'.$value->sef_url)}}" class="">
+						<div class="box-img mb-2">
+							<img class="" src="{{asset('storage/img/posts/'.$value->coverimg) }}"/>
 						</div>
-					</div>
-					<div class="categories">
-						<h4>Kategoriler</h4>
-						<ul>						
-						@foreach($categories as $category)	
-							<li><a href="{{url('/blog/category/'.$category->id.'/'.$category->sef_url)}}"><i class="fas fa-chevron-right"></i> {{$category->name}}</a></li>
-						@endforeach
+						<div class="box-body">
+
+							<h3 class="box-title h3 font-weight-bold font-italic">
+								{{$value->title}}
+							</h3>
+							<div class="box-text">
+								<p>
+									{{$value->abstract}}
+								</p>
+							</div>
+							<div class="box-subtitle">
+							</div>
+						</div>								
+					</a>
+				</div>
+				@endforeach				
+			</div>
+			<div class="col-mid col-md-6">
+				<div class="row ">
+					<div class="pageBreadcrumb">
+						<ul class="">
+							<li class=""><a href="#">Ana Sayfa</a></li>
+							<li class=""><a class="active" href="#">{{$category->name}}</a></li>
+							
 						</ul>
 					</div>
+				</div>
+				<div class="row">
+
+					@foreach($last as $key => $value)
+					<div class="xbox">	
+						<a href="{{url('/blog/post/'.$value->id.'/'.$value->sef_url)}}" class="">
+							<div class="box-img mb-2">
+
+								<img class="" src="{{asset('storage/img/posts/'.$value->coverimg) }}"/>
+
+							</div>
+							<div class="box-body">
+								<h3 class="box-title h3 font-weight-bold ">
+									{{$value->title}}
+								</h3>
+								<div class="box-text">
+									<p>
+										{{$value->abstract}}
+									</p>
+								</div>
+							</div>								
+						</a>					
+					</div>
+					@endforeach
+
+
+				</div>
+				<div class="row ">
+					@foreach($other as $key => $value)
+					@if($key!=0)
+					<div class="otherbox col-md-6">		
+				<a href="{{url('/blog/post/'.$value->id.'/'.$value->sef_url)}}" class="">				
+							<div class="box-img mb-2">
+
+
+								<img class="" src="{{asset('storage/img/posts/'.$value->coverimg) }}"/>
+
+							</div>
+							<div class="box-body">
+								<h3 class="box-title font-weight-bold ">
+									{{$value->title}}
+								</h3>
+							</div>								
+						</a>	
+					</div>
+					@endif
+					@endforeach
+
+					
 					
 				</div>
-
 			</div>
+			<div id="col-right" class="col-right br-l col-md-3">
 
+				<div class="row bulten ml-1 mb-4">
+					<div class="col-title">
+						<h3 class="h4 font-weight-bold text-dark">BÜLTEN</h3>
+					</div>			
+					<div class="bultenbox">					
+						<div class="bulten-body">						
+							<input type="" name="">
+							<button>Kayıt Ol</button>
+						</div>								
+					</div>
+				</div>
+
+				<div class="row last ml-1">	
+					<div class="col-title">
+						<h3 class="h4 font-weight-bold text-dark">SON PAYLAŞIMLAR</h3>
+					</div>		
+
+						@foreach($posts as $key => $value)
+				
+				<div class="lastbox">								
+						<div class="box-img col-md-4">
+							<a href="{{url('/blog/post/'.$value->id.'/'.$value->sef_url)}}" class="">	
+						
+						<img class="" src="{{asset('storage/img/posts/'.$value->coverimg) }}"/>
+						
+						</div>
+						<div class="box-body col-md-8">
+						<h3 class="box-title font-weight-bold">
+						{{$value->title}}
+						</h3>					
+
+						</div>								
+						</a></div>
+					@endforeach
+
+					
+				</div>
+			</div>		
 		</div>
 	</div>
+</section>
 
-	
-			
-    </section>
 
-@endsection
+	@endsection

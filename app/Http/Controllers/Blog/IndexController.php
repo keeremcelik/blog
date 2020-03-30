@@ -14,19 +14,23 @@ class IndexController extends Controller
 {
  function index(){
  		$posts 		= Post::with('category','user')->where('status','=','1')->orderBy('id','desc')->limit(12)->get();
- 		$manset		= Post::with('category','user')->where('status',1)->orderBy('id','desc')->limit(5)->get();
+ 		$other 		= Post::with('category','user')->where('status','=','1')->orderBy('id','desc')->limit(4)->get();
+ 		$random		= Post::with('category','user')->where('status','=','1')->inRandomOrder()->limit(3)->get();
+ 		$last		= Post::with('category','user')->where('status',1)->orderBy('id','desc')->limit(1)->get();
  		$social 	= Social::where('status','=','1')->get();
 		$category 	= Category::where('status','=','1')->get();
-		$personal 	= PersonalSetting::where('id','=','1')->get(); 		
+		$personal 	= PersonalSetting::where('id','=','1')->first(); 		
 		$ss 		= SiteSetting::where('id','=','1')->get();	
 	
 
 		return view('/blog/index',[
 			'socials' 		=> $social,
 			'personal' 		=> $personal,
+			'random' 		=> $random,
 			'ss'			=> $ss,
 			'posts'			=> $posts,
-			'manset'		=> $manset,
+			'others'		=> $other,
+			'last'			=> $last,
 			'categories'	=> $category
 		]);
 	}

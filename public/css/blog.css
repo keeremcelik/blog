@@ -150,6 +150,7 @@ body{
 .post-box-keywords .badge {
 	
 	padding: .3rem;
+	margin: .3rem;
 
 
 }
@@ -261,15 +262,10 @@ body{
 }
 
 .blogBox .post-box-text{
-	font-size: .7rem;
+	
 	color: #706968;
 }
-.blogBox .post-box-img img{
-	height: auto;
-	width: 100%;
-	max-height: 25vh;
-	object-fit: cover;
-}
+
 
 .blogBox .post-box-title a:hover{
 	text-decoration:none;
@@ -287,10 +283,10 @@ body{
 }
 .post-box-title {
 	color: #000;	
-	font-weight: 800;
-	font-size:.8rem;
+	font-weight: 600;
+	font-size:1.5rem;
 	text-transform: uppercase;
-	margin:1rem 0;
+
 }
 .content .post-box-title {
 	color: #000;	
@@ -316,9 +312,7 @@ body{
 	color:#4d4a4a;
 }
 .blogBox .post{
-	margin-bottom: 1em;
-	position: relative;
-	text-align: left;
+	
 }
 .blogBox h4{
 	font-size: 15px;
@@ -415,7 +409,7 @@ body{
 
 #s1,#s2,#s3,#s4,#pagination{
 	padding-top:50px;
-	max-width:75vw;
+	max-width:100vw;
 	margin:auto;
 }
 
@@ -523,6 +517,9 @@ align-items: center;
 	list-style: none;
 padding: 1rem;
 }
+.menu .mul .mli a:hover{
+	color: #ef1485;
+}
 .menu .mul .mli a{
 	cursor: pointer;
 text-decoration: underline;
@@ -614,44 +611,15 @@ flex-basis: 100%;
 	display: contents;
 }
 main{
-	font-family:Arial,x-locale-body,sans-serif;
-}
-.blogBox .post-box-text p{
-
-	font-size: 15px;
-	color: #353535;
+	font-family:'roboto',sans-serif;
 }
 
-.blogBox .post-box-desc .text_detail i{
-	color: #f85050;
-	padding: 0 .5rem;
-}
-.blogBox .post-box-desc .text_detail .head{
-	font-size: 1rem;
-	background-color: #fff;
-	width: 40px;
-	height: 100%;
-	display: inline-block;
-	text-align: center;
-}
-.blogBox .post-box-desc .text_detail{
-	background-color: #333;
-	color: #fff;
-	height: 40px;
-	line-height: 40px;
-	font-size: 0.75rem;
-	margin: 1rem 0px;
-}
-.blogBox .post-box .post-box-pics{
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	padding-top: 1rem;
-}
 .comment-box .writer-img i{
 	font-size: 3rem;
 	color: #32a654;
 }
 .blogBox .post-box{
-	padding: 15px;
+
 	background-color:
 	#fff;
 	position: relative;
@@ -784,6 +752,335 @@ main{
 }
 /*POST CARD CSS  END */ 
 
+#pagination h1,#pagination h1 a{
+	font-size: 1.2rem;
+	color:#000;
+}
+
+#pagination h1 a:hover{
+	text-decoration: none;
+
+}
+
+.p-1r{
+	padding: 1rem;
+}
+
+.slider{
+	
+}
+.carousel-inner img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	max-height: 250px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.carousel-item h5{
+	background-color: rgba(51, 51, 51, 0.7);
+	padding: .5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0;
+}
+.carousel-title{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+}
+.carousel-indicators{
+	bottom: .7rem;
+}
+.carousel-indicators li{
+	background-color: #191919;
+}
+.slider .cat{
+	position: absolute;
+	color: #fff;
+	padding: .5rem;
+	font-size: 0.7rem;
+	top: 1rem;
+	right: 1rem;
+	background-color: #191919;
+}
+
+.col-head{
+	width: 100%;
+	height: auto;
+}
+.col-left{
+height: auto;
+	width: 100%;
+
+}
+.col-mid{
+	height: auto;
+	width: 100%;
+}
+.col-right{
+	height: auto;
+	width: 100%;
+}
+.br-r{
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+.br-l{
+	border-left: 1px solid rgba(0,0,0,0.1);
+}
+.br-t{
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.br-b{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.br-a{
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.b-none{
+	border:none;
+}
+
+.box {
+width: 100%;
+padding: 1rem 0;
+}
+
+.box .box-text{
+font-size: .8rem;
+font-weight: 100;
+}
+.box .box-title{
+text-transform: uppercase;
+font-size: .9rem;
+}
+
+.box .box-img img{
+	width: 100%;
+	height: 150px;
+object-fit: cover;
+}
+.box .bulten-body{
+	display: flex;
+position: absolute;
+}
+.f-w1{
+	font-weight: 
+}
+.h1{
+font-size: 1.3rem;
+}
+.h2{
+font-size: 1.2rem;
+}
+.h3{
+font-size: 1.1rem;
+}
+.h4{
+font-size: 1rem;
+}
+.h5{
+font-size: .9rem;
+}
+.h6{
+font-size: .8rem;
+}
+.last{
+
+position: relative;
+}
+.lastbox {
+width: 100%;
+display: flex;
+padding: .3rem 0;
+}
+.lastbox .box-img{
+padding: 0;
+}
+.lastbox .box-title{
+
+font-weight: 600;
+}
+.lastbox .box-body{
+width: 100%;
+
+}
+.lastbox .box-text{
+
+font-weight: 100;
+}
+.lastbox .box-title{
+text-transform: uppercase;
+font-size: .7rem;
+
+}
+
+.lastbox .box-img img{
+	width: 100%;
+	min-height: 50px;
+max-height: 50px;
+object-fit: cover;
+}
+.box a:hover,.otherbox a:hover,.xbox a:hover,.lastbox a:hover{
+	text-decoration:none;
+}
+.box-title,.box-text{
+	color:#191919;
+}
+.bulten-body{
+	height: 25px;
+
+}
+.btnbulten{
+color: #fff;
+background-color: #191919;
+border: none;
+font-size: 0.8rem;
+height: 100%;
+font-weight: 600;
+}
+.txtbulten{
+	height: 100%;
+border: 1px solid #191919;
+color: #191919
+}
+.xbox {
+width: 100%;
+padding: 1.5rem;
+padding-top: 0;
+}
+
+.xbox .box-text{
+font-size: .9rem;
+font-weight: 100;
+}
+.xbox .box-title{
+text-transform: uppercase;
+}
+
+.xbox .box-img img{
+	width: 100%;
+	height: auto;
+}
+
+.otherbox {
+width: 100%;
+padding: 1.5rem;
+}
+
+.otherbox .box-title{
+text-transform: uppercase;
+font-size: .9rem;
+}
+
+.otherbox .box-img img{
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+.pageBreadcrumb{
+	float:right;
+
+}
+.pageBreadcrumb ul{
+	list-style: none;
+	display: flex;
+	padding-left: 1.5rem;
+}
+.pageBreadcrumb ul li{
+	display:inline;
+	
+}
+.pageBreadcrumb ul li:after{
+	padding:0 25px 0px 0px;
+}
+.pageBreadcrumb ul li a{
+	font-weight:600;
+	text-decoration: none;
+	color: #191919;
+	font-size: 0.8rem;
+}
+.pageBreadcrumb ul li+li:before{
+	 padding: 8px;
+	color: #191919;
+	content: "\00BB";
+}
+.pageBreadcrumb ul li a.active {
+	color:#d74055;
+	font-weight:100;
+}
+
+.xbox .post-box-text p{
+
+	font-size: 15px;
+	color: #353535;
+}
+
+.xbox .post-box-desc .text_detail i{
+	color: #f85050;
+	padding: 0 .5rem;
+}
+.xbox .post-box-desc .text_detail .head{
+	font-size: 1rem;
+	background-color: #fff;
+	width: 40px;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.xbox .post-box-desc .text_detail{
+	background-color: #333;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	font-size: 0.75rem;
+	margin: 1rem 0px;
+}
+.xbox .post-box .post-box-pics{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 1rem;
+}
+.xbox .post-box-img img{
+	height: auto;
+	width: 100%;
+}
+
+@media screen and (max-width: 367px) {
+.lastbox{
+	padding: .8rem 0;
+}
+
+.lastbox .box-img {
+  
+    max-width: 100px;
+}
+.lastbox .box-img img,.otherbox .box-img img,.xbox .box-img img,.box .box-img img{
+  
+ height: auto;
+}
+}
+@media screen and (max-width: 620px) {
+.pageRight{
+	display: none;
+}
+#s1, #s2, #s3, #s4, #pagination {  
+    max-width: 100vw;   
+}
+#col-left{
+margin-top: 2rem;
+order: 2;
+}
+#col-mid{
+
+	order: 1;
+}
+#col-right{
+margin-top: 2rem;
+	order: 3;
+}
+}
 @media screen and (max-width: 1000px) {
 
 	.post-img-modal{
@@ -840,57 +1137,4 @@ main{
 	.bloggerBox .social a {
 		float: none;
 	}
-}
-#pagination h1,#pagination h1 a{
-	font-size: 1.2rem;
-	color:#000;
-}
-
-#pagination h1 a:hover{
-	text-decoration: none;
-
-}
-
-.p-1r{
-	padding: 1rem;
-}
-
-.slider{
-	margin-bottom: 2rem;
-}
-.carousel-inner img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-	max-height: 250px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.carousel-item h5{
-	background-color: rgba(51, 51, 51, 0.7);
-	padding: .5rem;
-	font-size: 1rem;
-	text-transform: uppercase;
-	font-weight: 600;
-	margin: 0;
-}
-.carousel-title{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	color: #fff;
-}
-.carousel-indicators{
-	bottom: .7rem;
-}
-.carousel-indicators li{
-	background-color: #191919;
-}
-.slider .cat{
-	position: absolute;
-	color: #fff;
-	padding: .5rem;
-	font-size: 0.7rem;
-	top: 1rem;
-	right: 1rem;
-	background-color: #191919;
 }
